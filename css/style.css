@@ -1,0 +1,149 @@
+:root {
+  --altbkd: #adb3f0;
+  --bkd: #f0f8ff;
+  --txt: #32557f;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--txt);
+  background-color: var(--altbkd);
+}
+
+header {
+  background-color: var(--altbkd);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+header h1 {
+  font-size: 50px;
+  background-color: var(--bkd);
+  padding: 5px 30px 5px 60px;
+  margin: 10px 0 15px 0;
+}
+
+header ul li {
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 4px solid  var(--txt);
+  padding-bottom: 1px;
+}
+
+section.hero-banner {
+  background-color: var(--altbkd);
+  background-image:url(../images/02-hero-bg.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+
+div.bkd {
+  height: 60px;
+  background-color: var(--bkd);
+  position: absolute;
+  margin-top: 115px;
+  margin-right: 50px;
+  right: 10px;
+  top: 75px;
+}
+
+div.bkd h2 {
+  font-size: 40px;
+  text-align: right;
+  padding: 0 10px;
+}
+
+/*  */
+
+main.page-wrapper {
+  background-color: var(--bkd);
+}
+
+section.page-section {
+  display: grid;
+  grid-template-columns: 
+  400px auto;
+  margin: 0 30px 20px 0;
+  padding-top: 30px;
+}
+
+section.page-section h3 {
+  font-size: 45px;
+  text-align: right;
+  padding-left: 150px;
+  padding-right: 10px;
+  border-right-style: solid;
+  border-right-color: var(--txt);
+  border-right-width: thick;
+}
+
+section.page-section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 800px;
+}
+
+section.page-section ul li {
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 4px solid  var(--txt);
+  padding-bottom: 1px;
+}
+
+section.page-section p, ul, div {
+  padding-left: 20px;
+}
+
+#work div {
+  margin: 5px 5%;
+  display: grid;
+  min-height: 300px;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "work1 work1"
+  "work2 work3"
+  "work4 work5";
+}
+
+#work1 {
+  grid-area: work1;
+  background-image: url("../images/rethinking-prisoners.png");
+}
+
+#work2 {
+  grid-area: work2;
+  background-image: url("../images/coming-soon.png");
+}
+
+#work3 {
+  grid-area: work3;
+  background-image: url("../images/coming-soon.png");
+}
+
+#work4 {
+  grid-area: work4;
+  background-image: url("../images/coming-soon.png");
+}
+
+#work5 {
+  grid-area: work5;
+  background-image: url("../images/coming-soon.png");
+}
+
+.heading {
+   font-weight: bolder;
+}
+
