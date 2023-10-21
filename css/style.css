@@ -2,6 +2,7 @@
   --altbkd: #adb3f0;
   --bkd: #f0f8ff;
   --txt: #32557f;
+  --dkrtxt: #000;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
   background-color: var(--altbkd);
 }
 
-/* These apply for display screens up to 600px - mobile first. */
+/* These css rules apply for display screens up to 600px - mobile first. */
 header {
   background-color: var(--altbkd);
   display: flex;
@@ -118,6 +119,7 @@ figure {
 figcaption {
   padding: 5px;
   background-color: var(--altbkd);
+  color: var(--dkrtxt);
   font-size: 80%;
 }
 section.page-section ul {
@@ -125,7 +127,6 @@ section.page-section ul {
   display: flex;
   flex-direction: column;
   width: 240px;
-
 }
 
 section.page-section ul li {
@@ -135,8 +136,7 @@ section.page-section ul li {
   padding-bottom: 1px;
 }
 
-
-/* These apply for display screens 800px and larger */
+/* These css rules apply for display screens 800px and larger */
 @media (min-width: 800px) {
 
   header {
@@ -210,8 +210,7 @@ section.page-section ul li {
   section.page-section p, ul, div {
     padding-left: 10px;
   }
-
-  
+ 
   section.page-section ul {
     margin-top: 0px;
     flex-direction: row;
@@ -219,11 +218,9 @@ section.page-section ul li {
     align-items: center;
     min-width: 700px;
   }
-
 }
 
-
-/* These apply for display screens 1300px and larger */
+/* These css rules apply for display screens 1300px and larger */
 
 @media (min-width: 1000px) {
     
@@ -236,7 +233,7 @@ section.page-section ul li {
   }
 
   figcaption {
-    width: 100%;
+    font-size: 100%;
   }
 
   #work div {
@@ -250,8 +247,4 @@ section.page-section ul li {
     "work2 work3"
     "work4 work5";
   }
-
-
-
-
 }
