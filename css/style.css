@@ -83,7 +83,7 @@ section.page-section p, ul, div {
 
 #work1 {
   grid-area: work1;
-  min-width: 800px;
+  min-width: 400px;
 }
 
 #work2 {
@@ -115,13 +115,10 @@ figure {
   font-weight: bolder;
 }
 
-figure#feature {
-  width: 800px;
-}
-
 figcaption {
   padding: 5px;
   background-color: var(--altbkd);
+  font-size: 80%;
 }
 section.page-section ul {
   margin-top: 20px;
@@ -139,8 +136,8 @@ section.page-section ul li {
 }
 
 
-/* These apply for display screens 600px and larger */
-@media (min-width: 600px) {
+/* These apply for display screens 800px and larger */
+@media (min-width: 800px) {
 
   header {
     display: flex;
@@ -214,6 +211,34 @@ section.page-section ul li {
     padding-left: 10px;
   }
 
+  
+  section.page-section ul {
+    margin-top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 700px;
+  }
+
+}
+
+
+/* These apply for display screens 1300px and larger */
+
+@media (min-width: 1000px) {
+    
+  #work1 {
+  min-width: 800px;
+  }
+
+  figure#feature {
+  width: 800px;
+  }
+
+  figcaption {
+    width: 100%;
+  }
+
   #work div {
     margin: 5px 5%;
     display: grid;
@@ -226,13 +251,6 @@ section.page-section ul li {
     "work4 work5";
   }
 
-  section.page-section ul {
-    margin-top: 0px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 700px;
-  }
 
 
 
