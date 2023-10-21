@@ -69,6 +69,7 @@ section.page-section p, ul, div {
 
 #work div {
   min-height: 300px;
+  min-width: 400px;
   display: grid;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-columns: 100%;
@@ -82,41 +83,46 @@ section.page-section p, ul, div {
 
 #work1 {
   grid-area: work1;
-  background-image: url("../images/rethinking-prisoners.png");
-  background-size: contain;background-repeat: no-repeat;
- }
+  min-width: 800px;
+}
 
 #work2 {
-   grid-area: work2;
-   background-image: url("../images/yummy-halloween.png");
-   background-size: contain;
-   background-repeat: no-repeat;
+  grid-area: work2;
 }
 
 #work3 {
   grid-area: work3;
-  background-image: url("../images/coming-soon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 #work4 {
   grid-area: work4;
-  background-image: url("../images/coming-soon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 #work5 {
   grid-area: work5;
-  background-image: url("../images/coming-soon.png");
-  background-size: contain;    background-repeat: no-repeat;
 }
 
-.heading {
+#work2, #work3, #work4, #work5 {
+  min-width: 400px;
+} 
+
+.workGridArea {
+  margin-top: 60px;
+}
+
+figure {
+  width: 400px;
   font-weight: bolder;
 }
 
+figure#feature {
+  width: 800px;
+}
+
+figcaption {
+  padding: 5px;
+  background-color: var(--altbkd);
+}
 section.page-section ul {
   margin-top: 20px;
   display: flex;
@@ -227,4 +233,7 @@ section.page-section ul li {
     align-items: center;
     min-width: 700px;
   }
+
+
+
 }
