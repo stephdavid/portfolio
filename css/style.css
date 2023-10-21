@@ -210,7 +210,8 @@ section.page-section ul li {
   section.page-section p, ul, div {
     padding-left: 10px;
   }
- 
+
+
   section.page-section ul {
     margin-top: 0px;
     flex-direction: row;
