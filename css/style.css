@@ -35,9 +35,10 @@ nav ul {
 header ul li {
   font-size: 25px;
   text-decoration: none;
-  border-bottom: 4px solid  var(--txt);
+  border-bottom: 4px solid var(--txt);
   padding-bottom: 1px;
 }
+
 section.hero-banner {
   background-color: var(--altbkd);
   margin-top: -220px;
@@ -64,8 +65,15 @@ section.page-section h3 {
   padding-left: 10px;
 }
 
-section.page-section p, ul, div {
+section.page-section p,
+ul,
+div {
   padding-left: 10px;
+}
+
+img.photo {
+  float: left;
+  padding: 20px;
 }
 
 #work div {
@@ -103,9 +111,12 @@ section.page-section p, ul, div {
   grid-area: work5;
 }
 
-#work2, #work3, #work4, #work5 {
+#work2,
+#work3,
+#work4,
+#work5 {
   min-width: 400px;
-} 
+}
 
 .workGridArea {
   margin-top: 60px;
@@ -122,6 +133,7 @@ figcaption {
   color: var(--dkrtxt);
   font-size: 80%;
 }
+
 section.page-section ul {
   margin-top: 20px;
   display: flex;
@@ -132,7 +144,7 @@ section.page-section ul {
 section.page-section ul li {
   font-size: 20px;
   text-decoration: none;
-  border-bottom: 4px solid  var(--txt);
+  border-bottom: 4px solid var(--txt);
   padding-bottom: 1px;
 }
 
@@ -161,7 +173,7 @@ section.page-section ul li {
   }
 
   section.hero-banner {
-    background-image:url(../images/02-hero-bg.jpg);
+    background-image: url(../images/02-hero-bg.jpg);
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,8 +204,8 @@ section.page-section ul li {
 
   section.page-section {
     display: grid;
-    grid-template-columns: 
-    400px auto;
+    grid-template-columns:
+      400px auto;
     margin: 0 30px 20px 0;
   }
 
@@ -206,31 +218,19 @@ section.page-section ul li {
     border-right-color: var(--txt);
     border-right-width: thick;
   }
-
-  section.page-section p, ul, div {
-    padding-left: 10px;
-  }
-
-
-  section.page-section ul {
-    margin-top: 0px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 700px;
-  }
 }
+
 
 /* These css rules apply for display screens 1300px and larger */
 
-@media (min-width: 1000px) {
-    
+@media (min-width: 1300px) {
+
   #work1 {
-  min-width: 800px;
+    min-width: 800px;
   }
 
   figure#feature {
-  width: 800px;
+    width: 800px;
   }
 
   figcaption {
@@ -244,8 +244,22 @@ section.page-section ul li {
     grid-template-rows: 33% 33% 33%;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-    "work1 work1"
-    "work2 work3"
-    "work4 work5";
+      "work1 work1"
+      "work2 work3"
+      "work4 work5";
+  }
+
+  section.page-section p,
+  ul,
+  div {
+    padding-left: 10px;
+  }
+
+  section.page-section ul {
+    margin-top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 700px;
   }
 }
